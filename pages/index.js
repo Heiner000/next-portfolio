@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h1>{`Garrett's Portfolio`}</h1>
-        <Image 
+        <Image
           src="/next.svg"
           alt="next logo"
           width={450}
