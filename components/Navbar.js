@@ -18,11 +18,6 @@ function classNames(...classes) {
 export default function Navbar() {
 
     return (
-        // <nav>
-        //     <Link href="/">Home</Link>
-
-        //     <Link href="about">About Me</Link>
-        // </nav>
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
                 <>
@@ -52,7 +47,7 @@ export default function Navbar() {
                                         alt='Your Company'
                                     />
                                 </div>
-                                <div className='hidden sm:ml-6 sm:block'>
+                                <div className='hidden sm:ml-6 sm:block my-auto'>
                                     <div className='flex space-x-4'>
                                         {navigation.map((item) => (
                                             <a
