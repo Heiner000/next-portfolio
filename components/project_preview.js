@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function ProjectPreview() {
 
@@ -7,17 +8,19 @@ export default function ProjectPreview() {
             title: "SimuStock",
             desc: "A mobile-first stock trading simulation app with social features.",
             techStack: ["Python", "Django", "PostgreSQL", "React", "JavaScript", "BeautifulSoup"],
-            image: "/simustock.png", 
+            image: "/simustonk.png",
             liveSite: "#", // Replace with actual link
-            github: "#" // Replace with actual link
+            github: "#", // Replace with actual link,
+            linkUrl: "/simustock"
         },
         {
             title: "Card.io",
             desc: "Full-stack MERN app for creating, revising, and studying digital flashcards.",
             techStack: ["JavaScript", "Express", "MongoDB", "Node.js", "Cloudinary API"],
-            image: "/cardio.png", 
+            image: "/cardio.png",
             liveSite: "#", // Replace with actual link
-            github: "#" // Replace with actual link
+            github: "#", // Replace with actual link,
+            linkUrl: "/cardio"
         },
         {
             title: "Everyone’s a Critic",
@@ -25,7 +28,8 @@ export default function ProjectPreview() {
             techStack: ["JavaScript", "Express", "PostgreSQL", "Bootstrap", "Heroku"],
             image: "/everyoneCritic.png",
             liveSite: "https://card-io-study-app.netlify.app/", // Replace with actual link
-            github: "#" // Replace with actual link
+            github: "#", // Replace with actual link,
+            linkUrl: "/everyoneCritic"
         },
         {
             title: "The Bridge Troll’s Toll",
@@ -33,12 +37,13 @@ export default function ProjectPreview() {
             techStack: ["HTML5", "JavaScript", "CSS3"],
             image: "/bridgeTroll.png",
             liveSite: "#", // Replace with actual link
-            github: "#" // Replace with actual link
+            github: "#", // Replace with actual link,
+            linkUrl: "/bridgeTroll"
         },
     ]
 
     return (
-        <div className="">
+        <div className="h-screen" id="projects">
             {projects.map((project) => (
                 <div key={project.title} className="flex items-center gap-4 mb-8">
 
@@ -53,10 +58,12 @@ export default function ProjectPreview() {
                     </div>
 
                     <div>
-                        <div className="">
-                            <a className="font-bold underline hover:text-indigo-600">{project.title}</a>
-                            <a href={project.liveSite} target="_blank" rel="noopener noreferrer">{project.title}</a>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                        <div className="flex items-center justify-between">
+                            <Link href={project.linkUrl}>
+                                <h3 className="font-bold underline hover:text-indigo-600">{project.title}</h3>
+                            </Link>
+                            <a className='text-xs hover:text-indigo-600' href={project.liveSite} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a className='text-xs hover:text-indigo-600' href={project.github} target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
 
                         <div>{project.desc}</div>
