@@ -92,7 +92,7 @@ export default function Contact() {
     }
 
     return (
-        <main>
+        <main id="contact">
             <form onSubmit={handleSubmit} className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-slate-50 ">
                 <h1 className="text-2xl font-bold">Get in Touch!</h1>
                 <p>Let me know how I can help you with your latest project.</p>

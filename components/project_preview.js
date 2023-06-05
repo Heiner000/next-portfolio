@@ -43,35 +43,96 @@ export default function ProjectPreview() {
     ]
 
     return (
-        <div className="h-screen" id="projects">
-            {projects.map((project) => (
-                <div key={project.title} className="flex items-center gap-4 mb-8">
 
-                    <div className="relative w-32 h-32">
-                        <Image
-                            src={project.image}
-                            alt={project.title}
-                            height={400}
-                            width={400}
-                        />
-                    </div>
-
-                    <div>
-                        <div className="flex items-center justify-between">
-                            <Link href={project.linkUrl}>
-                                <h3 className="font-bold underline hover:text-indigo-600">{project.title}</h3>
-                            </Link>
-                            <a className='text-xs hover:text-indigo-600' href={project.liveSite} target="_blank" rel="noopener noreferrer">Live Demo</a>
-                            <a className='text-xs hover:text-indigo-600' href={project.github} target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        </div>
-
-                        <div>{project.desc}</div>
-                        <div>
-                            <small>{project.techStack.join(', ')}</small>
-                        </div>
-                    </div>
+        <section id="projects" className="mt-20">
+            <div className="mb-10">
+                <h2 className="text-3xl font-bold">Projects</h2>
+            </div>
+            {projects.map((project, index) => (
+                <div key={project.title} className="mb-16 flex flex-col md:flex-row items-center">
+                    {index % 2 === 0 ? (
+                        <>
+                            <div className="relative w-full md:w-1/3 h-64 md:h-auto mb-6 md:mb-0">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    height={500}
+                                    width={500}
+                                    className="rounded-lg"
+                                />
+                            </div>
+                            <div className="md:pl-6 md:w-2/3">
+                                <h2 className="text-2xl font-bold mb-2">
+                                    <Link href={project.linkUrl} className="hover:text-indigo-600">
+                                        {project.title}
+                                    </Link>
+                                </h2>
+                                <p className="mb-2">{project.desc}</p>
+                                <p className="mb-2 text-indigo-600">Tech: {project.techStack.join(", ")}</p>
+                                <p>
+                                    <a
+                                        className="text-indigo-500 hover:text-indigo-600"
+                                        href={project.liveSite}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See it Here
+                                    </a>
+                                    {" "} | {" "}
+                                    <a
+                                        className="text-indigo-500 hover:text-indigo-600"
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See the Code
+                                    </a>
+                                </p>
+                            </div>
+                        </>
+                    ) : (
+                        <>
+                            <div className="md:pl-6 md:w-2/3">
+                                <h2 className="text-2xl font-bold mb-2">
+                                    <Link href={project.linkUrl} className="hover:text-indigo-600">
+                                        {project.title}
+                                    </Link>
+                                </h2>
+                                <p className="mb-2">{project.desc}</p>
+                                <p className="mb-2 text-indigo-600">Tech: {project.techStack.join(", ")}</p>
+                                <p>
+                                    <a
+                                        className="text-indigo-500 hover:text-indigo-600"
+                                        href={project.liveSite}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See it Here
+                                    </a>
+                                    {" "} | {" "}
+                                    <a
+                                        className="text-indigo-500 hover:text-indigo-600"
+                                        href={project.github}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See the Code
+                                    </a>
+                                </p>
+                            </div>
+                            <div className="relative w-full md:w-1/3 h-64 md:h-auto mb-6 md:mb-0">
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    height={500}
+                                    width={500}
+                                    className="rounded-lg"
+                                />
+                            </div>
+                        </>
+                    )}
                 </div>
             ))}
-        </div>
-    )
+        </section>
+    );
 }
