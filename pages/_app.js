@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
-import Navbar from '@/components/Navbar'
+import 'tailwindcss/tailwind.css'
+import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
 export default function App({ Component, pageProps }) {
