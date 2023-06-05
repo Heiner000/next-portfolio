@@ -9,5 +9,5 @@
 }
 
 div {
-  @apply border border-rose-500 border-dashed;
+  /* @apply border border-rose-500 border-dashed; */
 }

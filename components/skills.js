@@ -40,20 +40,19 @@ export default function Skills() {
         <section id="skills" className="h-screen flex flex-col items-center justify-center">
             <h2 className="text-3xl font-bold mb-10">Skills</h2>
             <div className="mb-2">
-                <h3 className="text-2xl font-semibold mb-4">Hard Skills</h3>
+                {/* <h3 className="text-2xl font-semibold mb-4">Hard Skills</h3> */}
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
                     {skills.map((skill) => (
                         <div key={skill.name} className="flex flex-col items-center justify-center">
                             <p className="text-center text-gray-800 font-bold">
                                 {skill.name}
                             </p>
-                            <div className="relative w-24 h-24 flex justify-center items-center">
+                            <div className="relative w-24 h-24 flex justify-center items-center rounded-lg">
                             <Image
                                 src={skill.icon}
                                 alt={skill.name}
                                 width={80}
                                 height={80}
-                                className="rounded-lg"
                             />
                             </div>
                         </div>

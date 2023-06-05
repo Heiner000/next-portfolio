@@ -1,6 +1,6 @@
 export default function Profile() {
     return (
-        <div className="h-screen flex items-center" id="profile">
+        <div className="min-h-screen flex md:-mt-14 sm:items-center items-start mt-14" id="profile">
             <div className="">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold">Garrett Heiner</h1>

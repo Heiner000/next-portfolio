@@ -120,13 +120,12 @@ export default function ProjectPreview() {
                                     </a>
                                 </p>
                             </div>
-                            <div className="relative w-full md:w-1/3 h-64 md:h-auto mb-6 md:mb-0">
+                            <div className="relative w-full md:w-1/3 h-64 md:h-auto mb-6 md:mb-0 rounded-lg">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
                                     height={500}
                                     width={500}
-                                    className="rounded-lg"
                                 />
                             </div>
                         </>
