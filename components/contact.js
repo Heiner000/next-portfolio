@@ -93,34 +93,34 @@ export default function Contact() {
 
     return (
         <main>
-            <form onSubmit={handleSubmit} class="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-slate-50 ">
-                <h1 class="text-2xl font-bold">Get in Touch!</h1>
+            <form onSubmit={handleSubmit} className="rounded-lg shadow-xl flex flex-col px-8 py-8 bg-slate-50 ">
+                <h1 className="text-2xl font-bold">Get in Touch!</h1>
                 <p>Let me know how I can help you with your latest project.</p>
 
-                <label htmlFor="fullname" class="text-gray-500 font-light mt-8">Full name<span class="text-red-500">*</span></label>
-                <input type="text" name="fullname" value={fullname} onChange={(e) => {setFullname(e.target.value)}} class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
+                <label htmlFor="fullname" className="text-gray-500 font-light mt-8">Full name<span className="text-red-500">*</span></label>
+                <input type="text" name="fullname" value={fullname} onChange={(e) => {setFullname(e.target.value)}} className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
                 {errors?.fullname && (<p className='text-red-500'>Full name cannot be empty.</p>)}
 
-                <label htmlFor="email" class="text-gray-500 font-light mt-4">E-mail<span class="text-red-500">*</span></label>
-                <input type="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value)}} class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
+                <label htmlFor="email" className="text-gray-500 font-light mt-4">E-mail<span className="text-red-500">*</span></label>
+                <input type="email" name="email" value={email} onChange={(e) => {setEmail(e.target.value)}} className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
                 {errors?.email && (<p className='text-red-500'>Email cannot be empty.</p>)}
 
-                <label htmlFor="subject" class="text-gray-500 font-light mt-4">Subject<span class="text-red-500">*</span></label>
-                <input type="text" name="subject" value={subject} onChange={(e) => {setSubject(e.target.value)}} class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
+                <label htmlFor="subject" className="text-gray-500 font-light mt-4">Subject<span className="text-red-500">*</span></label>
+                <input type="text" name="subject" value={subject} onChange={(e) => {setSubject(e.target.value)}} className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" />
                 {errors?.subject && (<p className='text-red-500'>Subject cannot be empty.</p>)}
 
-                <label htmlFor="message" class="text-gray-500 font-light mt-4">Message<span class="text-red-500">*</span></label>
-                <textarea name="message" value={message} onChange={(e) => {setMessage(e.target.value)}} class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"></textarea>
+                <label htmlFor="message" className="text-gray-500 font-light mt-4">Message<span className="text-red-500">*</span></label>
+                <textarea name="message" value={message} onChange={(e) => {setMessage(e.target.value)}} className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"></textarea>
                 {errors?.message && (<p className='text-red-500'>Message body cannot be empty.</p>)}
 
-                <div class="flex flex-row items-center justify-start">
-                    <button type='submit' class="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
+                <div className="flex flex-row items-center justify-start">
+                    <button type='submit' className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
                         {buttonText}
                         <svg 
                             width="24" 
                             height="24" 
                             viewBox="0 0 24 24" 
-                            class="text-cyan-500 ml-2" 
+                            className="text-cyan-500 ml-2" 
                             fill="currentColor" 
                             xmlns="http://www.w3.org/2000/svg"
                         >

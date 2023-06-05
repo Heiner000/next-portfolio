@@ -10,7 +10,7 @@ export default function ProjectPreview() {
             techStack: ["Python", "Django", "PostgreSQL", "React", "JavaScript", "BeautifulSoup"],
             image: "/simustonk.png",
             liveSite: "#", // Replace with actual link
-            github: "#", // Replace with actual link,
+            github: "https://github.com/Heiner000/project-4-client",
             linkUrl: "/simustock"
         },
         {
@@ -18,8 +18,8 @@ export default function ProjectPreview() {
             desc: "Full-stack MERN app for creating, revising, and studying digital flashcards.",
             techStack: ["JavaScript", "Express", "MongoDB", "Node.js", "Cloudinary API"],
             image: "/cardio.png",
-            liveSite: "#", // Replace with actual link
-            github: "#", // Replace with actual link,
+            liveSite: "https://card-io-study-app.netlify.app/",
+            github: "https://github.com/Heiner000/project3-server",
             linkUrl: "/cardio"
         },
         {
@@ -27,8 +27,8 @@ export default function ProjectPreview() {
             desc: "Movie-centered social media app with user-friendly and responsive UX.",
             techStack: ["JavaScript", "Express", "PostgreSQL", "Bootstrap", "Heroku"],
             image: "/everyoneCritic.png",
-            liveSite: "https://card-io-study-app.netlify.app/", // Replace with actual link
-            github: "#", // Replace with actual link,
+            liveSite: "https://card-io-study-app.netlify.app/",
+            github: "https://github.com/Heiner000/project-2",
             linkUrl: "/everyoneCritic"
         },
         {
@@ -36,8 +36,8 @@ export default function ProjectPreview() {
             desc: "Fun multiple choice quiz game with clean, responsive design.",
             techStack: ["HTML5", "JavaScript", "CSS3"],
             image: "/bridgeTroll.png",
-            liveSite: "#", // Replace with actual link
-            github: "#", // Replace with actual link,
+            liveSite: "https://heiner000.github.io/project-1/",
+            github: "https://github.com/Heiner000/project-1",
             linkUrl: "/bridgeTroll"
         },
     ]
@@ -51,7 +51,6 @@ export default function ProjectPreview() {
                         <Image
                             src={project.image}
                             alt={project.title}
-                            // style={{objectFit: "contain"}}	
                             height={400}
                             width={400}
                         />
