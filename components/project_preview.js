@@ -63,7 +63,7 @@ export default function ProjectPreview() {
                             </div>
                             <div className="md:pl-6 md:w-2/3">
                                 <h2 className="text-2xl font-bold mb-2 text-slate-900">
-                                    <Link href={project.linkUrl} className="hover:text-amber-500">
+                                    <Link href={project.linkUrl} className="hover:text-blue-700">
                                         {project.title}
                                     </Link>
                                 </h2>
@@ -71,7 +71,7 @@ export default function ProjectPreview() {
                                 <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
                                 <p>
                                     <a
-                                        className="text-amber-700 hover:text-amber-500"
+                                        className="text-amber-500 hover:text-amber-700"
                                         href={project.liveSite}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function ProjectPreview() {
                                     </a>
                                     {" "} | {" "}
                                     <a
-                                        className="text-amber-700 hover:text-amber-500"
+                                        className="text-amber-500 hover:text-amber-700"
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function ProjectPreview() {
                         <>
                             <div className="md:pl-6 md:w-2/3">
                                 <h2 className="text-2xl font-bold mb-2 text-slate-900">
-                                    <Link href={project.linkUrl} className="hover:text-amber-500">
+                                    <Link href={project.linkUrl} className="hover:text-blue-700">
                                         {project.title}
                                     </Link>
                                 </h2>
@@ -102,7 +102,7 @@ export default function ProjectPreview() {
                                 <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
                                 <p>
                                     <a
-                                        className="text-amber-700 hover:text-amber-500"
+                                        className="text-amber-500 hover:text-amber-700"
                                         href={project.liveSite}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default function ProjectPreview() {
                                     </a>
                                     {" "} | {" "}
                                     <a
-                                        className="text-amber-700 hover:text-amber-500"
+                                        className="text-amber-500 hover:text-amber-700"
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -126,6 +126,7 @@ export default function ProjectPreview() {
                                     alt={project.title}
                                     height={500}
                                     width={500}
+                                    className="rounded-lg"
                                 />
                             </div>
                         </>

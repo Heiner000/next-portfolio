@@ -5,7 +5,7 @@ import Footer from '@/components/footer'
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className='bg-zinc-200'>
+    <div className='bg-zinc-100'>
       <Navbar />
       <Component {...pageProps} />
       <Footer />

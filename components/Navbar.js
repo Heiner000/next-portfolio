@@ -63,7 +63,7 @@ export default function Navbar() {
                                                 duration={500}
                                                 key={item.name}
                                                 className={classNames(
-                                                    item.current ? 'bg-blue-800 text-zinc-50' : 'text-zinc-200 hover:bg-blue-600 hover:text-zinc-100',
+                                                    item.current ? 'bg-amber-500 text-slate-800' : 'text-zinc-200 hover:bg-blue-600 hover:text-zinc-100',
                                                     'rounded-md px-3 py-2 text-sm font-medium flex items-center h-full'
                                                 )}
                                             >
