@@ -9,7 +9,7 @@ export default function ProjectPreview() {
             desc: "A mobile-first stock trading simulation app with social features.",
             techStack: ["Python", "Django", "PostgreSQL", "React", "JavaScript", "BeautifulSoup"],
             image: "/simustonk.png",
-            liveSite: "#", // Replace with actual link
+            liveSite: "#", // Replace with actual link when live
             github: "https://github.com/Heiner000/project-4-client",
             linkUrl: "/simustock"
         },
@@ -46,7 +46,7 @@ export default function ProjectPreview() {
 
         <section id="projects" className="mt-20">
             <div className="mb-10">
-                <h2 className="text-3xl font-bold">Projects</h2>
+                <h2 className="text-3xl font-bold text-slate-900">Projects</h2>
             </div>
             {projects.map((project, index) => (
                 <div key={project.title} className="mb-16 flex flex-col md:flex-row items-center">
@@ -62,16 +62,16 @@ export default function ProjectPreview() {
                                 />
                             </div>
                             <div className="md:pl-6 md:w-2/3">
-                                <h2 className="text-2xl font-bold mb-2">
-                                    <Link href={project.linkUrl} className="hover:text-indigo-600">
+                                <h2 className="text-2xl font-bold mb-2 text-slate-900">
+                                    <Link href={project.linkUrl} className="hover:text-amber-500">
                                         {project.title}
                                     </Link>
                                 </h2>
-                                <p className="mb-2">{project.desc}</p>
-                                <p className="mb-2 text-indigo-600">Tech: {project.techStack.join(", ")}</p>
+                                <p className="mb-2 text-slate-950">{project.desc}</p>
+                                <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
                                 <p>
                                     <a
-                                        className="text-indigo-500 hover:text-indigo-600"
+                                        className="text-amber-700 hover:text-amber-500"
                                         href={project.liveSite}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function ProjectPreview() {
                                     </a>
                                     {" "} | {" "}
                                     <a
-                                        className="text-indigo-500 hover:text-indigo-600"
+                                        className="text-amber-700 hover:text-amber-500"
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -93,16 +93,16 @@ export default function ProjectPreview() {
                     ) : (
                         <>
                             <div className="md:pl-6 md:w-2/3">
-                                <h2 className="text-2xl font-bold mb-2">
-                                    <Link href={project.linkUrl} className="hover:text-indigo-600">
+                                <h2 className="text-2xl font-bold mb-2 text-slate-900">
+                                    <Link href={project.linkUrl} className="hover:text-amber-500">
                                         {project.title}
                                     </Link>
                                 </h2>
-                                <p className="mb-2">{project.desc}</p>
-                                <p className="mb-2 text-indigo-600">Tech: {project.techStack.join(", ")}</p>
+                                <p className="mb-2 text-slate-950">{project.desc}</p>
+                                <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
                                 <p>
                                     <a
-                                        className="text-indigo-500 hover:text-indigo-600"
+                                        className="text-amber-700 hover:text-amber-500"
                                         href={project.liveSite}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -111,7 +111,7 @@ export default function ProjectPreview() {
                                     </a>
                                     {" "} | {" "}
                                     <a
-                                        className="text-indigo-500 hover:text-indigo-600"
+                                        className="text-amber-700 hover:text-amber-500"
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"

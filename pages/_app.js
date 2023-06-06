@@ -5,7 +5,7 @@ import Footer from '@/components/footer'
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className='h-screen'>
+    <div className='bg-zinc-200'>
       <Navbar />
       <Component {...pageProps} />
       <Footer />

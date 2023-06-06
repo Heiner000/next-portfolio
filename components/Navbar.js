@@ -35,14 +35,14 @@ export default function Navbar() {
 
     return (
         <>
-            <Disclosure as="nav" className="bg-gray-800 z-10">
+            <Disclosure as="nav" className="bg-slate-950 z-10">
                 {({ open }) => (
                     <>
                         <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
                             <div className="relative flex h-16 items-center justify-between">
                                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                                     {/* Mobile menu button */}
-                                    <Disclosure.Button className="z-50 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                    <Disclosure.Button className="bg-blue-900 z-50 inline-flex items-center justify-center rounded-md p-2 text-zinc-200 hover:bg-blue-600 hover:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                         <span className="sr-only">Open main menu</span>
                                         {open ? (
                                             <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -63,7 +63,7 @@ export default function Navbar() {
                                                 duration={500}
                                                 key={item.name}
                                                 className={classNames(
-                                                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                                    item.current ? 'bg-blue-800 text-zinc-50' : 'text-zinc-200 hover:bg-blue-600 hover:text-zinc-100',
                                                     'rounded-md px-3 py-2 text-sm font-medium flex items-center h-full'
                                                 )}
                                             >
@@ -88,7 +88,7 @@ export default function Navbar() {
                                         duration={500}
                                         key={item.name}
                                         className={classNames(
-                                            item.current ? 'z-50 bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                            item.current ? 'z-50 bg-blue-950 text-zinc-50' : 'text-zinc-200 hover:bg-blue-600 hover:text-zinc-100',
                                             'rounded-md px-3 py-2 text-sm font-medium flex items-center h-full'
                                         )}
                                     >
@@ -107,7 +107,7 @@ export default function Navbar() {
             {scrollPosition > 70 && (
                 <button
                     onClick={() => scroll.scrollToTop()}
-                    className='fixed right-4 bottom-4 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 z-50'
+                    className='fixed right-4 bottom-4 bg-blue-900 text-zinc-200 p-2 rounded-full hover:bg-blue-600 hover:text-zinc-100 z-50'
                 >
                     <ChevronUpIcon className="h-5 w-5" />
                 </button>
