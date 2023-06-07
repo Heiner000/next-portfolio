@@ -63,9 +63,10 @@ export default function ProjectPreview() {
                             </div>
                             <div className="md:pl-6 md:w-2/3">
                                 <h2 className="text-2xl font-bold mb-2 text-slate-900">
-                                    <Link href={project.linkUrl} className="hover:text-blue-700">
+                                    {/* <Link href={project.linkUrl} className="hover:text-blue-700">
                                         {project.title}
-                                    </Link>
+                                    </Link> */}
+                                        {project.title}
                                 </h2>
                                 <p className="mb-2 text-slate-950">{project.desc}</p>
                                 <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
@@ -94,9 +95,10 @@ export default function ProjectPreview() {
                         <>
                             <div className="md:pl-6 md:w-2/3">
                                 <h2 className="text-2xl font-bold mb-2 text-slate-900">
-                                    <Link href={project.linkUrl} className="hover:text-blue-700">
+                                    {/* <Link href={project.linkUrl} className="hover:text-blue-700">
                                         {project.title}
-                                    </Link>
+                                    </Link> */}
+                                        {project.title}
                                 </h2>
                                 <p className="mb-2 text-slate-950">{project.desc}</p>
                                 <p className="mb-2 text-slate-900">Tech: {project.techStack.join(", ")}</p>
