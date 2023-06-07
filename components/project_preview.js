@@ -43,22 +43,19 @@ export default function ProjectPreview() {
     ]
 
     return (
-
         <section id="projects" className="min-h-screen mt-20">
             <div className="mb-10">
                 <h2 className="text-3xl font-bold text-slate-900">Projects</h2>
             </div>
             {projects.map((project, index) => (
                 <div key={project.title} className="mb-16 flex flex-col md:flex-row items-center">
-                    <div className={`relative w-full md:w-1/3 aspect-[${project.aspectRatio || '16/9'}] mb-6 md:mb-0 overflow-hidden ${index % 2 !== 0 && 'md:order-last'}`}>
+                    <div className={`rounded-lg relative w-full md:w-1/3 aspect-[16/9] mb-6 md:mb-0 overflow-hidden ${index % 2 !== 0 && 'md:order-last'}`}>
                         <Image
                             src={project.image}
                             alt={project.title}
-                            // height={500}
-                            // width={500}
-                            layout="fill"
-                            objectFit="contain"
-                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                            height={500}
+                            width={500}
+                            className="absolute top-0 left-0 w-full h-full object-contain"
                         />
                     </div>
                     <div className="md:pl-6 md:w-2/3">
@@ -91,4 +88,5 @@ export default function ProjectPreview() {
             ))}
         </section>
     );
+
 }
