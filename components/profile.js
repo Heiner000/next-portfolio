@@ -15,7 +15,7 @@ export default function Profile() {
                     A driven and resilient individual with experience in sales and service positions that have honed my leadership, communication, and problem-solving skills. My diverse background in trades & finance has prepared me to bring ideas to life through my passion for learning and producing quality work. With a focus on web development, I am ready to create efficient and effective solutions for any project.
                 </div>
                 <br />
-                <div className="flex text-lg justify-center gap-8">
+                <div className="flex flex-col items-center text-lg justify-center gap-8 md:flex-row">
                     <a className="icon mx-6" href="/Garrett-Heiner-Resume.pdf" download>
                         <Image
                             src={`icons/file-pdf-regular.svg`}

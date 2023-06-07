@@ -37,7 +37,7 @@ export default function Skills() {
     ]
 
     return (
-        <section id="skills" className="h-screen flex flex-col items-center justify-center">
+        <section id="skills" className="min-h-screen flex flex-col items-center justify-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-10">Skills</h2>
             <div className="mb-2">
                 {/* <h3 className="text-2xl font-semibold mb-4">Hard Skills</h3> */}
