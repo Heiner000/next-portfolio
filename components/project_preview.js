@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
+import NotDeployed from "../pages/NotDeployed";
 
 export default function ProjectPreview() {
 
@@ -9,7 +9,7 @@ export default function ProjectPreview() {
             desc: "A mobile-first stock trading simulation app with social features.",
             techStack: ["Python", "Django", "PostgreSQL", "React", "JavaScript", "BeautifulSoup"],
             image: "/p4-home.png",
-            liveSite: "#", // Replace with actual link when live
+            liveSite: "/NotDeployed", // Replace with actual link when live
             github: "https://github.com/Heiner000/project-4-client",
             linkUrl: "/simustock"
         },
@@ -27,7 +27,7 @@ export default function ProjectPreview() {
             desc: "Movie-centered social media app with user-friendly and responsive UX.",
             techStack: ["JavaScript", "Express", "PostgreSQL", "Bootstrap", "Heroku"],
             image: "/p2-landing.png",
-            liveSite: "https://card-io-study-app.netlify.app/",
+            liveSite: "https://evac-app.herokuapp.com/",
             github: "https://github.com/Heiner000/project-2",
             linkUrl: "/everyoneCritic"
         },

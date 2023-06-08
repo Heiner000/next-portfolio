@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     // do not use https://
     // array of WHITELISTED image domains
-    domains: ["placekitten.com"]
+    domains: ["placekitten.com", "via.placeholder.com"]
   }
 }
 
