@@ -116,7 +116,7 @@ export default function Contact() {
                 {errors?.message && (<p className='text-red-600'>Message body cannot be empty.</p>)}
 
                 <div className="flex flex-row items-center justify-start">
-                    <button type='submit' className="px-10 mt-8 py-2 bg-amber-400 text-slate-50 font-light rounded-md text-lg flex flex-row items-center">
+                    <button type='submit' className="px-10 mt-8 py-2 bg-amber-500 text-slate-50 font-light rounded-md text-lg flex flex-row items-center hover:bg-amber-600 transition-colors duration-200">
                         {buttonText}
                         <svg
                             viewBox="0 0 24 24"

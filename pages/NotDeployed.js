@@ -1,6 +1,11 @@
 import Image from 'next/image'
 
 export default function NotDeployed() {
+
+    const closeTab = () => {
+        window.close()
+    }
+
     return (
         <div className="min-h-screen flex items-center justify-center bg-slate-200 px-4 sm:px-0">
 
@@ -12,7 +17,6 @@ export default function NotDeployed() {
                         width="100%"
                         height="100%"
                         style={{ position: 'absolute' }}
-                        frameBorder="0"
                         className="giphy-embed"
                         allowFullScreen
                     />
@@ -20,7 +24,15 @@ export default function NotDeployed() {
 
                 <h1 className="text-3xl sm:text-4xl text-slate-900 mb-4 mt-4">Site not yet deployed</h1>
                 <p className="text-lg sm:text-xl text-slate-900">Check back soon for updates!</p>
+
+                <button
+                    onClick={closeTab}
+                    className="mt-4 bg-amber-500 text-slate-50 px-4 py-2 rounded-md hover:bg-amber-600 transition-colors duration-200"
+                >
+                    Close tab
+                </button>
             </div>
+
 
         </div>
     )
