@@ -8,7 +8,6 @@ export default function Profile() {
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-slate-900">Garrett Heiner</h1>
                     <h2 className="text-slate-600">Software Engineer</h2>
-                    {/* <small className="text-slate-500">email@gmail.com</small> */}
                 </div>
                 <br />
                 <div className="text-center text-slate-900">
