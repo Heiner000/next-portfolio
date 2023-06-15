@@ -40,7 +40,6 @@ export default function Skills() {
         <section id="skills" className="min-h-screen flex flex-col items-center justify-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-10">Skills</h2>
             <div className="mb-2">
-                {/* <h3 className="text-2xl font-semibold mb-4">Hard Skills</h3> */}
                 <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
                     {skills.map((skill) => (
                         <div key={skill.name} className="flex flex-col items-center justify-center">
@@ -59,14 +58,6 @@ export default function Skills() {
                     ))}
                 </div>
             </div>
-            {/* <div>
-                <h3 className="text-2xl font-semibold mb-4">Methods</h3>
-                <ul className="list-disc list-inside">
-                    {methods.map((method, i) => (
-                        <li key={`method-${i}`}>{method}</li>
-                    ))}
-                </ul>
-            </div> */}
         </section>
     )
 }
