@@ -52,6 +52,7 @@ export default function Skills() {
                                 alt={skill.name}
                                 width={80}
                                 height={80}
+                                loading="lazy"
                             />
                             </div>
                         </div>

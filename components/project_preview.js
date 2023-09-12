@@ -68,15 +68,6 @@ export default function ProjectPreview() {
             </div>
             {projects.map((project, index) => (
                 <div key={project.title} className="mb-16 flex flex-col md:flex-row items-center">
-                    {/* <div className={`rounded-lg relative w-full md:w-1/2 aspect-[16/9] mb-6 md:mb-0 ${index % 2 !== 0 && 'md:order-last'}`}>
-                        <Image
-                            src={project.images[0]}
-                            alt={project.title}
-                            height={500}
-                            width={500}
-                            className="absolute top-0 left-0 w-full h-full object-contain hover:scale-150 transition-all duration-500"
-                        />
-                    </div> */}
                     <div className={`rounded-lg relative w-full md:w-1/2 aspect-[16/9] mb-6 md:mb-0 ${index % 2 !== 0 && 'md:order-last'}`}>
                         <Carousel infiniteLoop autoPlay showThumbs={false}>
                             {project.images.map((image, i) => (
